@@ -19,10 +19,10 @@ function randomNumbers(num: number): number[] {
   return array;
 }
 
-async function fetchCards(): Promise<Card[]> {
+async function fetchCards(difficulty: number): Promise<Card[]> {
   const endpoint = 'https://db.ygoprodeck.com/api/v7/cardinfo.php';
   const data = await (await fetch(endpoint)).json();
-  return randomNumbers(10).map((arg) => ({
+  return randomNumbers(difficulty).map((arg) => ({
     id: data.data[arg].id,
     imageUrl: data.data[arg].card_images[0].image_url,
     key: v4(),

@@ -9,10 +9,12 @@ const Scores: React.FC<Props> = ({ currentScore, bestScore }): JSX.Element => {
   return (
     <div className="scoresContainer">
       <div className="scores">
-        Current Score <br /> {currentScore}
+        Current Score <br />
+        <strong>{currentScore}</strong>
       </div>
       <div className="scores">
-        Best Score <br /> {bestScore}
+        Best Score <br />
+        <strong>{bestScore}</strong>
       </div>
     </div>
   );
