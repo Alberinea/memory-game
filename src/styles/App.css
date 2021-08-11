@@ -1,0 +1,19 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.cardContainer > img {
+  height: 300px;
+  width: 220px;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.cardContainer > img:hover {
+  transform: scale(1.1);
+}
