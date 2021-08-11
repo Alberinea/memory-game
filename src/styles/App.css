@@ -6,14 +6,14 @@
   padding: 50px;
 }
 
-.cardContainer > img {
+.cardContainer > input {
   height: 300px;
   width: 220px;
-  margin: 0 15px;
+  margin: 15px;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
-.cardContainer > img:hover {
+.cardContainer > input:hover {
   transform: scale(1.1);
 }

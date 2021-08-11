@@ -1,13 +1,18 @@
 import '../styles/Scores.css';
 
-const Scores = (): JSX.Element => {
+interface Props {
+  currentScore: number;
+  bestScore: number;
+}
+
+const Scores: React.FC<Props> = ({ currentScore, bestScore }): JSX.Element => {
   return (
     <div className="scoresContainer">
       <div className="scores">
-        Current Score <br /> 0
+        Current Score <br /> {currentScore}
       </div>
       <div className="scores">
-        Best Score <br /> 0
+        Best Score <br /> {bestScore}
       </div>
     </div>
   );
