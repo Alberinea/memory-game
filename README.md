@@ -2,7 +2,7 @@
 
 ## Project: Memory Game
 
-![Screenshot](Memory Game.png)
+![Screenshot](memorygame.png)
 
 A basic Yu-Gi-Oh card memory game built with typescript and React.
 
